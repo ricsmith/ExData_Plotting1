@@ -17,7 +17,7 @@ with(sample, {
   plot(strptime( paste(sample$Date,sample$Time), "%Y-%m-%d %H:%M:%S" ), sample$Sub_metering_1, type="s", ylab="Energy sub metering",xlab="")
   points(strptime( paste(sample$Date,sample$Time), "%Y-%m-%d %H:%M:%S" ), sample$Sub_metering_2, type="s", col="red")
   points(strptime( paste(sample$Date,sample$Time), "%Y-%m-%d %H:%M:%S" ), sample$Sub_metering_3, type="s", col="blue")
-  legend("topright", legend=c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), col=c("black","red","blue"), lty=c(1,1,1), lwd=c(2.5,2.5,2.5))
+  legend("topright", legend=c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), col=c("black","red","blue"), lty=c(1,1,1), lwd=c(2.5,2.5,2.5), bty="n")
   # Plot 4
   plot(strptime( paste(sample$Date,sample$Time), "%Y-%m-%d %H:%M:%S" ), sample$Global_reactive_power, type="s", ylab="Global_reactive_power",xlab="datetime")
 })
